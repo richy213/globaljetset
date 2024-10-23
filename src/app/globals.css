@@ -1,0 +1,777 @@
+@import url('https://fonts.googleapis.com/css2?family=Qwitcher+Grypen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Antic+Didone&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yrsa:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kantumruy+Pro:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Condensed:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Cantarell&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  /* font-family: 'Qwitcher Grypen', cursive; */
+  /* font-family: 'EB Garamond', serif; */
+  /* font-family: 'Antic Didone', serif; */
+  /* font-family: 'Titillium Web', sans-serif; */
+  /* font-family: 'PT Sans', sans-serif; */
+  font-family: 'Lora', serif;
+  /* font-family: 'Cormorant Garamond', serif; */
+  /* font-family: 'Assistant', sans-serif; */
+  /* font-family: 'Yrsa', serif; */
+  /* font-family: 'Kantumruy Pro', sans-serif; */
+  /* font-family: 'Kantumruy Pro', sans-serif; */
+  /* font-family: 'Encode Sans Semi Condensed', sans-serif; */
+  /* font-family: 'Cantarell', sans-serif; */
+}
+
+.sinscroll {
+  overflow: hidden !important;
+}
+.navbar-global {
+  background-color: white;
+  z-index: 10000;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.nosotros {
+  padding: 100px 0;
+}
+
+.heading {
+  padding: 1rem 0;
+  font-size: 3.5rem;
+  text-align: center;
+}
+
+.videos {
+  width: 100%;
+  /* Ajusta el ancho y alto según tus necesidades */
+  height: 100vh;
+  overflow: hidden;
+  border: none !important;
+}
+
+.videos video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 90vh;
+  object-fit: cover;
+  /* Ajusta el tamaño del video para cubrir el contenedor */
+  border: none !important;
+  appearance: none;
+}
+
+.videos video source {
+  border: none !important;
+  appearance: none;
+}
+.titles-video {
+  z-index: 100;
+}
+
+.element {
+  opacity: 1;
+  transform: scale(1.2);
+  transition: opacity 0.3s ease 0.3s, transform 0.3s ease 0.3s;
+}
+
+.izquierda {
+
+  animation-name: slideInLeft;
+  animation-duration: 1s;
+}
+
+.derecha {
+  animation-name: slideInRight;
+  animation-duration: 1s;
+}
+
+.card-up {
+  opacity: 0;
+  animation-name: slideUp;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  /* animation-range: entry 50% cover 50%; */
+}
+
+.card-up2 {
+  opacity: 0;
+  animation-name: slideUp;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-delay: .5s;
+  /* animation-range: entry 50% cover 50%; */
+}
+
+.card-up3 {
+  opacity: 0;
+  animation-name: slideUp;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+  /* animation-range: entry 50% cover 50%; */
+}
+
+.card-up4 {
+  opacity: 0;
+  animation-name: slideUp;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-delay: 1.5s;
+  /* animation-range: entry 50% cover 50%; */
+}
+
+.card-up5 {
+  opacity: 0;
+  animation-name: slideUp;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-delay: 2s;
+  /* animation-range: entry 50% cover 50%; */
+}
+
+.card-up6 {
+  opacity: 0;
+  animation-name: slideUp;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-delay: 2.5s;
+  /* animation-range: entry 50% cover 50%; */
+}
+
+.card-push {
+  opacity: 0;
+  animation-name: slidePush;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+  /* animation-range: entry 50% cover 50%; */
+}
+
+.card-push2 {
+  opacity: 0;
+  animation-name: slidePush;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+  animation-delay: .5s;
+  /* animation-range: entry 50% cover 50%; */
+}
+
+.card-push3 {
+  opacity: 0;
+  animation-name: slidePush;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+  /* animation-range: entry 50% cover 50%; */
+}
+
+.card-push4 {
+  opacity: 0;
+  animation-name: slidePush;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+  animation-delay: 1.5s;
+  /* animation-range: entry 50% cover 50%; */
+}
+
+.card-push5 {
+  opacity: 0;
+  animation-name: slidePush;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+  animation-delay: 2s;
+  /* animation-range: entry 50% cover 50%; */
+}
+
+.card-push6 {
+  opacity: 0;
+  animation-name: slidePush;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+  animation-delay: 2.5s;
+  /* animation-range: entry 50% cover 50%; */
+}
+
+
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-300px);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(300px);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+/* Animations  */
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slidePush {
+  from {
+    opacity: 0;
+    transform: scale(0.3);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Definición de un color dorado atractivo */
+.golden-color {
+  background: linear-gradient(90deg, rgba(179, 155, 27, 1) 0%, rgba(244, 225, 124, 1) 50%, rgba(179, 155, 27, 1) 100%) !important;
+  /* color: #FFFFFF;  */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  /* Agrega un efecto de sombra al texto para que se vea brillante */
+  padding: 15px;
+  /* Añade relleno para resaltar el efecto */
+  /* border-radius: 8px;  */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  /* Agrega una sombra al contenedor */
+}
+
+/* Si deseas un texto con un efecto de brillo dorado, puedes aplicar la siguiente clase */
+.text-golden {
+  color: #c89919;
+  /* Cambia el color de texto a dorado */
+  /* text-shadow: 0 0 50px #FFD700, 0 0 50px #FFD700, 0 0 20px #FFD700; Agrega múltiples sombras para crear un efecto de brillo */
+
+}
+
+nav {
+  background-color: white;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+
+}
+
+nav ul {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav li {
+  height: 50px;
+}
+
+nav a {
+  height: 100%;
+  padding: 0 30px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: black;
+}
+
+nav li:first-child {
+  margin-right: auto;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  z-index: 20;
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.sidebar li {
+  width: 100%;
+}
+
+.sidebar a {
+  width: 100%;
+}
+
+
+.imagen {
+  --_g: 10% /45% 45% no-repeat radial-gradient(#000 0 0);
+  --m:
+    left var(--_i, 0%) top var(--_g),
+    bottom var(--_i, 0%) left var(--_g),
+    top var(--_i, 0%) right var(--_g),
+    right var(--_i, 0%) bottom var(--_g);
+  -webkit-mask: var(--m);
+  mask: var(--m);
+  filter: grayscale();
+  transition: .3s linear;
+  cursor: pointer;
+}
+
+.imagen:hover {
+  --_i: 10%;
+  filter: grayscale(0);
+}
+
+
+.container {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background-color: #ffffff;
+  text-align: center;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.container:hover {
+  cursor: crosshair;
+}
+
+.text {
+  position: absolute;
+  font-size: 72px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #000000;
+  bottom: 20%;
+  left: 0;
+  right: 0;
+  z-index: 3;
+}
+
+.magic {
+  position: absolute;
+  top: calc(50% - 10rem);
+  left: calc(50% - 10rem);
+  width: 20rem;
+  height: 20rem;
+  background: center center no-repeat fixed;
+  background-size: cover;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.logo_responisve {
+  display: none;
+}
+
+.logo-efect {
+  position: relative;
+  transition: all .3s ease;
+}
+
+.logo-efect img:first-child {
+  box-shadow: 0 60px 60px -60px rgba(0, 30, 255, 0.5);
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+.logo-efect img:last-child {
+  position: absolute;
+  width: 100%;
+  height: 80px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transform: translateY(25%);
+  transition: .3s ease;
+  opacity: 0;
+}
+
+.children:hover {
+  opacity: 0 !important;
+}
+
+.logo-efect:hover {
+  transform: perspective(250px) rotateX(10deg) translateY(-5%) translateZ(0);
+}
+
+.logo-efect::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  /* height: 100%; */
+  /* width: 100%; */
+  background-image: linear-gradient(to bottom, transparent 10% rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0) 95%);
+  opacity: 0;
+  transition: all .3s ease;
+}
+
+.logo-efect:hover::before {
+  opacity: 1;
+}
+
+.logo-efect:hover img:last-child {
+  opacity: 1;
+  transform: translateY(10%);
+}
+
+.logo-efect:hover img:first-child {
+  opacity: 0;
+  transition: .3s ease;
+}
+
+
+
+.img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-position: center center;
+  background-size: cover;
+  overflow: hidden;
+  transition: all .5s;
+  -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+.img:before,
+.img:after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  content: '';
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.img:hover {
+  transform: scale(1.3);
+}
+
+@media (min-width:1201px) {
+
+  /* <- 5-4  hexagons per row */
+  #hexGrid {
+    padding-bottom: 4.4%
+  }
+
+  .hex {
+    width: 20%;
+    /* = 100 / 5 */
+  }
+
+  .hex:nth-child(9n+6) {
+    /* first hexagon of even rows */
+    margin-left: 10%;
+    /* = width of .hex / 2  to indent even rows */
+  }
+}
+
+@media (max-width: 1200px) and (min-width:901px) {
+
+  /* <- 4-3  hexagons per row */
+  #hexGrid {
+    padding-bottom: 5.5%;
+    font-size: 13px;
+  }
+
+  .hex {
+    width: 25%;
+    /* = 100 / 4 */
+  }
+
+  .hex:nth-child(7n+5) {
+    /* first hexagon of even rows */
+    margin-left: 12.5%;
+    /* = width of .hex / 2  to indent even rows */
+  }
+}
+
+@media (max-width: 900px) and (min-width:601px) {
+
+  /* <- 3-2  hexagons per row */
+  #hexGrid {
+    padding-bottom: 7.4%;
+    font-size: 14px;
+  }
+
+  .hex {
+    width: 33.333%;
+    /* = 100 / 3 */
+  }
+
+  .hex:nth-child(5n+4) {
+    /* first hexagon of even rows */
+    margin-left: 16.666%;
+    /* = width of .hex / 2  to indent even rows */
+  }
+}
+
+@media (max-width: 600px) {
+
+  /* <- 2-1  hexagons per row */
+  #hexGrid {
+    padding-bottom: 11.2%;
+    font-size: 12px;
+  }
+
+  .hex {
+    width: 50%;
+    /* = 100 / 3 */
+  }
+
+  .hex:nth-child(3n+3) {
+    /* first hexagon of even rows */
+    margin-left: 25%;
+    /* = width of .hex / 2  to indent even rows */
+  }
+}
+
+@media (max-width: 400px) {
+  #hexGrid {
+    font-size: 8px;
+  }
+}
+
+/* end gallery  */
+
+@media (max-width: 500px) {
+
+ 
+
+  .swiper-slide {
+    width: 100% !important;
+    height: 20rem !important;
+  }
+
+  .swiper-slide img {
+    width: 100% !important;
+    height: auto;
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 990px) {
+  .gallery {
+    margin: 0;
+    margin-left: 22%;
+    margin-top: 25%;
+    width: 35%;
+  }
+
+
+}
+
+@media (max-width: 959px) {
+  .logo_responisve {
+    display: block;
+  }
+}
+
+
+@media (max-width: 900px) {
+  .responsive-navbar {
+    /* display: none; */
+    font-size: 12px;
+  }
+
+}
+
+@media (max-width: 770px) {
+  .responsive-navbar {
+    /* display: none; */
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 724px) {
+  .responsive-navbar {
+    display: none;
+    /* font-size: 10px; */
+  }
+}
+
+@media (max-width: 720px) {
+  .gallery {
+    margin-left: 32%;
+  }
+}
+@media (max-width: 865px){
+  .visible{
+    display: flex !important;
+  }
+}
+.visible{
+  display: none;
+}
+.no-focus-border:focus {
+  outline: none !important;
+}
+
+.no-focus-border {
+  border: none !important;
+}
+
+.clase {
+  border: 1px solid #d1af77 !important;
+  border-radius: 10px !important;
+}
+
+.sinpadin {
+  padding: 0px !important;
+}
+
+.swiper {
+  width: 100%;
+  /* height: 100vh; */
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 50vh;
+  object-fit: cover;
+}
+
+.carrusel {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+}
+
+.imagen {
+  flex: 0 0 auto;
+  width: 100%;
+  /* Ajusta según el número de imágenes que quieras mostrar a la vez */
+  animation: deslizar 10s linear infinite;
+}
+
+@keyframes deslizar {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+
+  /* Ajusta según el número total de imágenes */
+}
+
+.blanco {
+  background-color: white !important;
+  background: #ffffff !important;
+}
+.color-blanco{
+  color: white !important;
+}
+
+.boton-animado:hover {
+  transform: scale(1.1);
+}
+
+.boton-animado {
+  transition: all 0.5s;
+}
+
+.conpading {
+  padding: 8px !important;
+}
+
+.cotizador {
+  transition: all 1s ease-in-out;
+  overflow: hidden;
+}
+
+.custom-menu-handler:hover {
+  background-color: transparent !important;
+  /* Elimina el fondo en hover */
+}
+
+.custom-menu-list {
+  background: transparent !important;
+}
+
+.animatedFadeIn {
+  animation: fadeIn 6s ease forwards; /* Ajusta la duración y el estilo de la animación como prefieras */
+}
+
+@keyframes fadeIn {
+  from {
+      background-color: rgba(0, 0, 0, 1); /* Fondo oscuro al inicio */
+  }
+  to {
+      background-color: rgba(0, 0, 0, 0.4);
+  }
+}
+
+.arriba{
+  z-index: 999999999999 !important;
+  outline: none !important;
+  border: none !important;
+}
+
+@media (max-width: 865px){
+  .menubar{
+    background: white !important;
+    position: sticky !important;
+    top: 0 !important;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  }
+}
+/* windowWidth < 865 ? "bg-white shadow-xl sticky top-0" */
+
+
+.aguila1{
+  display: block ;
+}
+.aguila2{
+  display: none ;
+}
+
+@media (max-width: 600px){
+  .aguila1{
+    display: none;
+  }
+  .aguila2{
+    display: block;
+  }
+}

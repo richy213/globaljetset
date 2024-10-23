@@ -1,0 +1,18 @@
+User-agent: *
+Disallow: /temp/
+Disallow: /private/
+Disallow: /admin/
+Crawl-delay: 10
+Sitemap: https://globaljetset.mx/sitemap.xml
+
+User-agent: Googlebot
+Disallow: /no-google/
+Allow: /public/
+Crawl-delay: 5
+
+User-agent: Bingbot
+Disallow: /no-bing/
+Crawl-delay: 20
+
+User-agent: *
+Disallow: /no-bots/
