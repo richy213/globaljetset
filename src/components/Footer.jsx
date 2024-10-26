@@ -69,7 +69,7 @@ const Footer = () => {
                                 <span>Developed by: 
                                 </span>
                                 <a className="font-semibold text-neutral-600 dark:text-neutral-400"
-                                    href="https://www.boom-partner.com/" target='_blank'>BigBros</a>
+                                    href="https://www.instagram.com/bigbroconsulting/profilecard/?igsh=dGZsNWg0OGZna3Rq" target='_blank'>BigBros</a>
 
                             </div>
                         </div>
