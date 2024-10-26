@@ -31,7 +31,7 @@ export const metadata = {
   description: '¡Bienvenido a Globaljetset tu destino definitivo para experimentar el lujo en el cielo! Descubre un mundo de elegancia y comodidad con nuestra exclusiva flota de aviones privados disponibles para venta y alquiler.',
   keywords: ["globaljetsetmx", "globaljetset", "globaljet", "global", "aviones", "renta", "renta de aviones","venta de aviones", "yates", "renta de yates", "vuelo"],
   creator: 'Luis Nava',
-  publisher: "Boom Partner",
+  publisher: "BigBros",
   formatDetection: {
     email: false,
     address: false,
