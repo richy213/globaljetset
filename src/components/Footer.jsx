@@ -60,7 +60,7 @@ const Footer = () => {
                                 {language ? "Privacy Policy" : "Política de Privacidad"}
                             </h6>
                             <div className="bg-neutral-200 p-2 text-center dark:bg-neutral-700">
-                                <span>© 2024 Copyright:
+                                <span>© 2025 Copyright:
                                 </span>
                                 <a className="font-semibold text-neutral-600 dark:text-neutral-400" href="/"> Global Jet Set</a>
 
