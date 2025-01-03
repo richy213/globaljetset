@@ -1,8 +1,6 @@
 import { Inter } from 'next/font/google'
 import './globals.css'
 import Provider from './Provider'
-import { Analytics } from "@vercel/analytics/react"
-import { SpeedInsights } from "@vercel/speed-insights/next"
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
@@ -30,8 +28,8 @@ export const metadata = {
   },
   description: '¡Bienvenido a Globaljetset tu destino definitivo para experimentar el lujo en el cielo! Descubre un mundo de elegancia y comodidad con nuestra exclusiva flota de aviones privados disponibles para venta y alquiler.',
   keywords: ["globaljetsetmx", "globaljetset", "globaljet", "global", "aviones", "renta", "renta de aviones","venta de aviones", "yates", "renta de yates", "vuelo"],
-  creator: 'Luis Nava',
-  publisher: "BigBros",
+  creator: 'Ricardo Dosamantes',
+  publisher: "Big Bro Consulting",
   formatDetection: {
     email: false,
     address: false,
@@ -46,9 +44,6 @@ export default function RootLayout({ children }) {
         <Provider>
           {children}
         </Provider>
-
-        <Analytics />
-        <SpeedInsights />
 
       </body>
     </html>
